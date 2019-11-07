@@ -104,6 +104,9 @@ if( !is_blank( $c_ref ) ) {
 				case 'bug_change_status_page.php':
 					$t_path = $t_home_page;
 					break;
+				case 'manage_proj_edit_page.php':
+                                        $t_path = $t_referrer_page . '?project_id=' . $t_bottom;
+                                        break;
 				default:
 					$t_path = $t_referrer_page . $t_param;
 					break;
